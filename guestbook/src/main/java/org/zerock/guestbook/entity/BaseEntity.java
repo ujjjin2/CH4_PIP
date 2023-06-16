@@ -16,11 +16,11 @@ import java.time.LocalDateTime;
 @Getter
 abstract class BaseEntity {
 
-    @CreatedDate
+    @CreatedDate//생성시간
     @Column(name = "regdate", updatable = false)
     private LocalDateTime regDate;
 
-    @LastModifiedDate
+    @LastModifiedDate//최종 수정시간
     @Column(name ="moddate" )
     private LocalDateTime modDate;
 
