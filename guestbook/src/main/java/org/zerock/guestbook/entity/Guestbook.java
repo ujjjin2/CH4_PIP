@@ -9,7 +9,7 @@ import jakarta.persistence.*;
 @Getter
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructor //no,all 둘다
 @ToString
 public class Guestbook extends BaseEntity {
 
@@ -33,4 +33,5 @@ public class Guestbook extends BaseEntity {
     public void changeContent(String content){
         this.content = content;
     }
+
 }
