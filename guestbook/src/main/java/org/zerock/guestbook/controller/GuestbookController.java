@@ -27,8 +27,6 @@ public class GuestbookController {
         return "redirect:/guestbook/list";
     }
 
-    //테스트1
-    //테스트2
     @GetMapping("/list")
     public void list(PageRequestDTO pageRequestDTO, Model model){
 
@@ -37,7 +35,7 @@ public class GuestbookController {
         model.addAttribute("result", service.getList(pageRequestDTO));
 
     }
-
+    
     @GetMapping("/register")
     public void register(){
         log.info("regiser get...");
