@@ -28,6 +28,7 @@ public class GuestbookController {
     }
 
     //테스트1
+    //테스트2
     @GetMapping("/list")
     public void list(PageRequestDTO pageRequestDTO, Model model){
 
